@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="factions.css" />
+  <title>Factions</title>
+</head>
+
+
+<body>
+  <div class="grid-bar">
+    <a href="index.html">
+      <h1 style="background-color: rgb(245, 245, 220); color: black; padding: 5px; display: inline-block; border-radius: 15px;">
+        WikiWho
+      </h1>
+    </a>
+    <input type="text" id="searchInput" placeholder="Search..." style="
+    background-color: rgb(245, 245, 220);
+    color: rgb(150, 150, 150);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 15px;
+    " onkeyup="searchFunction()" />
+
+    <script src="search.js"></script>
+
+    <script>
+      function searchFunction() {
+        var input = document.getElementById("searchInput");
+        if (input.value.trim() !== "") {
+          input.style.color = "black";
+        } else {
+          input.style.color = "rgb(150, 150, 150)";
+        }
+      }
+    </script>
+
+  </div>
+  <h1>Fraktionen</h1>
+  <a name="humans"></a>
+  <div class="containerbox">
+    <h2>Fraktion 1</h2>
+    <img src="dereinzigechte.png" />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      accumsan, elit quis sodales vulputate, turpis leo laoreet lacus, nec
+      fringilla elit justo auctor odio. Integer vel fermentum lectus.
+      Phasellus scelerisque magna non odio gravida bibendum. Aliquam erat
+      volutpat. Nunc id sem ac felis mattis condimentum. Vivamus interdum
+      sapien nec leo tincidunt, vitae tristique libero scelerisque. Donec at
+      lectus sit amet justo gravida faucibus. Sed convallis eros non magna
+      volutpat, sit amet posuere purus eleifend. Quisque vitae diam sit amet
+      ligula tempor dignissim. Sed non lacus nec sapien tristique facilisis ac
+      non eros. Nunc rutrum, tortor eget consequat efficitur, magna mi gravida
+      sem, eget faucibus eros libero sed ex. Sed in pharetra metus. Sed non
+      lacus at velit molestie suscipit. Sed et leo ut libero fermentum tempor
+      a nec urna. Phasellus ultrices fermentum velit non tempor. Ut fringilla
+      magna vel odio feugiat, ac fermentum enim vestibulum. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Vestibulum feugiat, nisi vitae congue dapibus, velit eros
+      pharetra lorem, nec gravida est arcu nec lacus. Morbi non ipsum auctor,
+      luctus est vel, scelerisque arcu. Proin nec dictum orci. Integer dapibus
+      libero in dui vestibulum, nec ullamcorper nisi gravida. Nunc consequat
+      libero at magna rutrum, nec finibus odio maximus. Vivamus eu dolor vel
+      velit vehicula laoreet nec in elit. Vivamus mattis elit id arcu finibus
+      scelerisque. Sed interdum ligula a nulla fermentum, vitae ullamcorper
+      odio dictum. Vivamus suscipit fringilla metus, eget vehicula enim
+      convallis non. Phasellus sodales auctor mi, nec ultrices elit cursus id.
+      Donec vel libero euismod, tincidunt velit nec, fermentum lacus.
+    </p>
+  </div>
+  <a name="demons"></a>
+  <div class="containerbox">
+    <h2>Fraktion 2</h2>
+    <img src="lillith.png" />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      accumsan, elit quis sodales vulputate, turpis leo laoreet lacus, nec
+      fringilla elit justo auctor odio. Integer vel fermentum lectus.
+      Phasellus scelerisque magna non odio gravida bibendum. Aliquam erat
+      volutpat. Nunc id sem ac felis mattis condimentum. Vivamus interdum
+      sapien nec leo tincidunt, vitae tristique libero scelerisque. Donec at
+      lectus sit amet justo gravida faucibus. Sed convallis eros non magna
+      volutpat, sit amet posuere purus eleifend. Quisque vitae diam sit amet
+      ligula tempor dignissim. Sed non lacus nec sapien tristique facilisis ac
+      non eros. Nunc rutrum, tortor eget consequat efficitur, magna mi gravida
+      sem, eget faucibus eros libero sed ex. Sed in pharetra metus. Sed non
+      lacus at velit molestie suscipit. Sed et leo ut libero fermentum tempor
+      a nec urna. Phasellus ultrices fermentum velit non tempor. Ut fringilla
+      magna vel odio feugiat, ac fermentum enim vestibulum. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Vestibulum feugiat, nisi vitae congue dapibus, velit eros
+      pharetra lorem, nec gravida est arcu nec lacus. Morbi non ipsum auctor,
+      luctus est vel, scelerisque arcu. Proin nec dictum orci. Integer dapibus
+      libero in dui vestibulum, nec ullamcorper nisi gravida. Nunc consequat
+      libero at magna rutrum, nec finibus odio maximus. Vivamus eu dolor vel
+      velit vehicula laoreet nec in elit. Vivamus mattis elit id arcu finibus
+      scelerisque. Sed interdum ligula a nulla fermentum, vitae ullamcorper
+      odio dictum. Vivamus suscipit fringilla metus, eget vehicula enim
+      convallis non. Phasellus sodales auctor mi, nec ultrices elit cursus id.
+      Donec vel libero euismod, tincidunt velit nec, fermentum lacus.
+    </p>
+  </div>
+  <div class="containerbox">
+    <h2>Fraktion 3</h2>
+    <img src="dereinzigechte.png" />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      accumsan, elit quis sodales vulputate, turpis leo laoreet lacus, nec
+      fringilla elit justo auctor odio. Integer vel fermentum lectus.
+      Phasellus scelerisque magna non odio gravida bibendum. Aliquam erat
+      volutpat. Nunc id sem ac felis mattis condimentum. Vivamus interdum
+      sapien nec leo tincidunt, vitae tristique libero scelerisque. Donec at
+      lectus sit amet justo gravida faucibus. Sed convallis eros non magna
+      volutpat, sit amet posuere purus eleifend. Quisque vitae diam sit amet
+      ligula tempor dignissim. Sed non lacus nec sapien tristique facilisis ac
+      non eros. Nunc rutrum, tortor eget consequat efficitur, magna mi gravida
+      sem, eget faucibus eros libero sed ex. Sed in pharetra metus. Sed non
+      lacus at velit molestie suscipit. Sed et leo ut libero fermentum tempor
+      a nec urna. Phasellus ultrices fermentum velit non tempor. Ut fringilla
+      magna vel odio feugiat, ac fermentum enim vestibulum. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Vestibulum feugiat, nisi vitae congue dapibus, velit eros
+      pharetra lorem, nec gravida est arcu nec lacus. Morbi non ipsum auctor,
+      luctus est vel, scelerisque arcu. Proin nec dictum orci. Integer dapibus
+      libero in dui vestibulum, nec ullamcorper nisi gravida. Nunc consequat
+      libero at magna rutrum, nec finibus odio maximus. Vivamus eu dolor vel
+      velit vehicula laoreet nec in elit. Vivamus mattis elit id arcu finibus
+      scelerisque. Sed interdum ligula a nulla fermentum, vitae ullamcorper
+      odio dictum. Vivamus suscipit fringilla metus, eget vehicula enim
+      convallis non. Phasellus sodales auctor mi, nec ultrices elit cursus id.
+      Donec vel libero euismod, tincidunt velit nec, fermentum lacus.
+    </p>
+  </div>
+  <div class="containerbox">
+    <h2>Fraktion 4</h2>
+    <img src="dereinzigechte.png" />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      accumsan, elit quis sodales vulputate, turpis leo laoreet lacus, nec
+      fringilla elit justo auctor odio. Integer vel fermentum lectus.
+      Phasellus scelerisque magna non odio gravida bibendum. Aliquam erat
+      volutpat. Nunc id sem ac felis mattis condimentum. Vivamus interdum
+      sapien nec leo tincidunt, vitae tristique libero scelerisque. Donec at
+      lectus sit amet justo gravida faucibus. Sed convallis eros non magna
+      volutpat, sit amet posuere purus eleifend. Quisque vitae diam sit amet
+      ligula tempor dignissim. Sed non lacus nec sapien tristique facilisis ac
+      non eros. Nunc rutrum, tortor eget consequat efficitur, magna mi gravida
+      sem, eget faucibus eros libero sed ex. Sed in pharetra metus. Sed non
+      lacus at velit molestie suscipit. Sed et leo ut libero fermentum tempor
+      a nec urna. Phasellus ultrices fermentum velit non tempor. Ut fringilla
+      magna vel odio feugiat, ac fermentum enim vestibulum. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Vestibulum feugiat, nisi vitae congue dapibus, velit eros
+      pharetra lorem, nec gravida est arcu nec lacus. Morbi non ipsum auctor,
+      luctus est vel, scelerisque arcu. Proin nec dictum orci. Integer dapibus
+      libero in dui vestibulum, nec ullamcorper nisi gravida. Nunc consequat
+      libero at magna rutrum, nec finibus odio maximus. Vivamus eu dolor vel
+      velit vehicula laoreet nec in elit. Vivamus mattis elit id arcu finibus
+      scelerisque. Sed interdum ligula a nulla fermentum, vitae ullamcorper
+      odio dictum. Vivamus suscipit fringilla metus, eget vehicula enim
+      convallis non. Phasellus sodales auctor mi, nec ultrices elit cursus id.
+      Donec vel libero euismod, tincidunt velit nec, fermentum lacus.
+    </p>
+  </div>
+</body>
+
+</html>

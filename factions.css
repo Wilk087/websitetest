@@ -1,0 +1,165 @@
+/**
+ * Sets the background color of the entire page to a dark reddish-brown.
+ */
+body {
+  background-color: rgb(79, 52, 47);
+}
+a {
+  color: black;
+  font-size: 1.25rem;
+}
+
+
+/**
+ * Styles the main heading of the container box.
+ * The heading is centered and has a font size of 2 rem.
+ * The color is set to beige.
+ */
+h1 {
+  color: rgb(245, 245, 220);
+  text-align: center;
+}
+
+
+
+h3 {
+  color: black;
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+h3:hover {
+  transform: translateY(-1.5px);
+}
+
+ul {
+  margin-top: 50px;
+  text-align: left;
+  max-width: 50%;
+  font-size: 1.4rem;
+}
+
+/**
+ * Styles a container box with a beige background, rounded corners, padding, and a centered layout.
+ * The container box is 90% of the width, centered on the page, and has a drop shadow effect.
+ * The contents of the container box are centered both horizontally and vertically.
+ */
+.containerbox {
+  background-color: rgb(245, 245, 220);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(131, 131, 131);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.grid-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 70%;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+
+
+/**
+ * Adds margin between the h1 and h2 elements within the .containerbox class.
+ */
+.containerbox h1 {
+  margin-bottom: 1rem;
+  /* Add margin between h1 and h2 */
+}
+
+/**
+ * Styles the heading within the .containerbox element.
+ * The heading is centered, has a font size of 2rem, and has a bottom margin of 1rem to separate it from the paragraph.
+ */
+.containerbox h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* Add margin for separation from the paragraph */
+  position: absolute;
+  top: 2%;
+  /* Move h2 up */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**
+ * Styles the image within the .containerbox element.
+ * - Sets the maximum width of the image to 100% to ensure it fits within its container.
+ * - Sets the height to 'auto' to maintain the image's aspect ratio.
+ * - Hides any overflow of the image beyond its container.
+ * - Displays the image as a block-level element.
+ * - Removes any right margin from the image.
+ * - Moves the image down a bit on mobile version.
+ */
+.containerbox img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin-right: 0;
+  border-radius: 5%;
+  margin-top: 75px;
+
+  /* Move the image down a bit on mobile version */
+}
+
+/**
+ * Sets the font size and text alignment for all paragraph elements.
+ * This style is applied when the screen width is at least 768 pixels.
+ */
+p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+
+
+@media (min-width: 1024px) {
+
+  /**
+   * Styles the container box to display its contents in a row, center them horizontally, and align them vertically.
+   */
+  .containerbox {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Center items horizontally */
+  }
+
+  /**
+   * Applies styles to images within the `.containerbox` element.
+   * - `margin-right: 20px;` adds 20 pixels of space to the right of the image.
+   * - `max-width: 25%;` ensures the image does not exceed 25% of the container's width.
+   */
+  .containerbox img {
+    margin-right: 20px;
+    max-width: 25%;
+    margin-top: 0;
+    /* Reset the top margin on larger screens */
+    overflow: hidden;
+  }
+
+  /**
+   * Styles a paragraph element with left-aligned text, a maximum width of 50%, and a font size of 1.4 rem.
+   */
+  p {
+    margin-top: 50px;
+    text-align: left;
+    max-width: 50%;
+    font-size: 1.4rem;
+  }
+}
