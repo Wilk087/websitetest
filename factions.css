@@ -58,13 +58,6 @@ ul {
   position: relative;
 }
 
-.grid-bar {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 70%;
-}
-
 input {
   font-size: 1.5rem;
 }
@@ -130,6 +123,13 @@ p {
 
 @media (min-width: 1024px) {
 
+  .grid-bar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 70%;
+}
+
   /**
    * Styles the container box to display its contents in a row, center them horizontally, and align them vertically.
    */
@@ -162,4 +162,39 @@ p {
     max-width: 50%;
     font-size: 1.4rem;
   }
+}
+
+@media (max-width: 1023px) {
+
+  .containerbox-large {
+      background-color: rgb(245, 245, 220);
+      border-radius: 10px;
+      padding: 1rem;
+      width: auto;
+      margin: 10px auto;
+      text-align: left;
+      box-shadow: 2px 2px 2px rgb(131, 131, 131);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      flex-wrap: wrap;
+  }
+
+  .containerbox-small {
+      background-color: rgb(245, 245, 220);
+      border-radius: 10px;
+      padding: 1rem;
+      width: auto;
+      margin: 10px auto;
+      text-align: left;
+      box-shadow: 2px 2px 2px rgb(131, 131, 131);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      flex-wrap: wrap;
+      margin-bottom: 5%;
+  }
+
 }
