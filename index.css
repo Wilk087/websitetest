@@ -44,22 +44,13 @@ a {
     font-size: 1.25rem;
 }
 
-h1 {
+h1, p1, ul {
     transition: transform 0.3s ease;
 
 }
 
-p1 {
-    transition: transform 0.3s ease;
 
-}
-
-ul {
-    transition: transform 0.3s ease;
-
-}
-
-h1:hover {
+h1:hover, ul:hover {
     transform: translateY(-1.5px);
 }
 
@@ -67,12 +58,6 @@ h1:hover {
 p1:hover {
     transform: translateY(-1.5px);
     text-decoration: black underline;
-}
-
-
-
-ul:hover {
-    transform: translateY(-1.5px);
 }
 
 input {
@@ -94,15 +79,23 @@ input {
         align-items: left;
     }
 
-    .grid-boxes {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        align-items: left;
-        gap: 1rem;
+    .flex-boxes {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-left: 2%;
+        justify-content: left;
+        gap: 1.5rem;
+        overflow-x: auto; /* Add horizontal scrolling */
     }
 
-    .containerbox-large {
+    .flex-box {
+        flex-grow: 1; /* Allow the child elements to grow and fill the space */
+        flex-basis: 0; /* Base size of the flex items before they start to grow */
+        margin-right: 2%; /* Adjust as needed */
+    }
+    
+
+    /*.containerbox-large {
         background-color: rgb(245, 245, 220);
         border-radius: 10px;
         padding: 1rem;
@@ -116,13 +109,31 @@ input {
         align-items: flex-start;
         position: relative;
         flex-wrap: wrap;
-    }
+    }*/
 
-    .containerbox-small {
+    .containerbox-small-first {
         background-color: rgb(245, 245, 220);
         border-radius: 10px;
         width: auto;
         margin: 10px auto;
+        text-align: center;
+        box-shadow: 2px 2px 2px rgb(131, 131, 131);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .containerbox-small {
+        
+        background-color: rgb(245, 245, 220);
+        border-radius: 10px;
+        width: auto;
+        margin: 10px auto;
+        margin-top: 1.5rem;
         text-align: center;
         box-shadow: 2px 2px 2px rgb(131, 131, 131);
         display: flex;
